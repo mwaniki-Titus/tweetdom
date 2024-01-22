@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="top">
+        <h1>Twitter Clone</h1>
+
+     
+        <div class="user-dropdown">
+            <label for="userDropdown">Select User:</label>
+            <select id="userDropdown" onchange="fetchUser(this.value)">
+            </select>
+        </div>
+    </div>
+
+        <div id="userProfile" class="hidden">
+            <img id="userImage" alt="User Image">
+            <h2 id="userName"></h2>
+        </div>
+    <div class="container">
+       
+        <div id="userTweets" class="hidden">
+            <h3>Tweets:</h3>
+            <ul id="tweetsList"></ul>
+        </div>
+        <div id="comments" class="hidden">
+            <h3>Comments:</h3>
+            <ul id="commentsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
